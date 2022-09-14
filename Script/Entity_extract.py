@@ -5,8 +5,7 @@ from typing import List
 class Entity:
     '''
     Entity represents a single extracted entity from a text. An entity has a
-    type and a value. For the text "I am a plumber", an extracted entity could be
-    of type "profession" with the value "plumber".
+    type and a value.
     '''
 
     def __init__(self, type: str, value: str) -> None:
