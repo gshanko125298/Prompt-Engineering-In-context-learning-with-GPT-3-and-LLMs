@@ -27,5 +27,6 @@ There are a list of LLMs that was serve as a free to create or perform analysis 
       - AlenNLP: Language modeling is the task of determining the probability of a given sequence of words occurring in a sentence
       - The text generation API:  is backed by a large-scale unsupervised language model that can generate paragraphs of text. 
       - BLOOM: is used for a type of semantic search. The black text is user input, by which the LLM task is casted as search.
-      - Cohere: is one of the model works on entity extraction with scoring 
+      - Cohere: is one of the model works on entity extraction with scoring
+      
 Finally we decide to us cohere as our LLMS model for this project, hence our project is focus on entity extraction not sentiment analysis. 
