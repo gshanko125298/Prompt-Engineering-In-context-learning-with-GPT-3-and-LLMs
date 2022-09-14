@@ -30,3 +30,16 @@ There are a list of LLMs that was serve as a free to create or perform analysis 
       - Cohere: is one of the model works on entity extraction with scoring
       
 Finally we decide to us cohere as our LLMS model for this project, hence our project is focus on entity extraction not sentiment analysis. 
+
+This are some steps which had been taken from .....
+Entity Extraction
+     - Extracting a piece of information from text is a common need in language processing systems. LLMs can at times extract entities which are harder to extract using other NLP methods (and where pre-training provides the model with some context on these entities). This is an overview of using generative LLMs to extract entities.
+     Setup
+Let's start by installing the packages we need.
+1. !pip install cohere requests tqdm
+2. Preparing examples for the prompt: n our prompt, we'll present the model with examples for the type of output that performs entity extraction with scoring  
+3. Creating the extraction prompt
+4. Getting the data
+5. Running the model
+
+For the detail of the code part please refer our (Notebook)
