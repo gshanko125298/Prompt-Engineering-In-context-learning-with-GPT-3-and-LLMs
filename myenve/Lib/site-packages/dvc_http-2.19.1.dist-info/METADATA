@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: dvc-http
+Version: 2.19.1
+Summary: http plugin for dvc
+Home-page: http://dvc.org
+Download-URL: https://github.com/iterative/dvc-http
+License: Apache License 2.0
+Project-URL: Documentation, https://dvc.org/doc
+Project-URL: Source, https://github.com/iterative/dvc-http
+Keywords: dvc,http
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: dvc
+Requires-Dist: fsspec[http]
+Requires-Dist: aiohttp-retry (>=2.5.0)
+Provides-Extra: tests
+Requires-Dist: wheel (==0.37.0) ; extra == 'tests'
+Requires-Dist: dvc ; extra == 'tests'
+Requires-Dist: pytest (==6.2.5) ; extra == 'tests'
+Requires-Dist: pytest-cov (==3.0.0) ; extra == 'tests'
+Requires-Dist: pytest-xdist (==2.4.0) ; extra == 'tests'
+Requires-Dist: pytest-mock (==3.6.1) ; extra == 'tests'
+Requires-Dist: pytest-lazy-fixture (==0.6.3) ; extra == 'tests'
+Requires-Dist: pytest-docker (==0.10.3) ; extra == 'tests'
+Requires-Dist: flaky (==3.7.0) ; extra == 'tests'
+Requires-Dist: mock (==4.0.3) ; extra == 'tests'
+Requires-Dist: rangehttpserver (==1.2.0) ; extra == 'tests'
+Requires-Dist: wget (==3.2) ; extra == 'tests'
+Requires-Dist: filelock (==3.3.2) ; extra == 'tests'
+Requires-Dist: wsgidav (==3.1.1) ; extra == 'tests'
+Requires-Dist: crc32c (==2.2.post0) ; extra == 'tests'
+Requires-Dist: xmltodict (==0.12.0) ; extra == 'tests'
+Requires-Dist: Pygments (==2.10.0) ; extra == 'tests'
+Requires-Dist: collective.checkdocs (==0.2) ; extra == 'tests'
+Requires-Dist: pydocstyle (==6.1.1) ; extra == 'tests'
+Requires-Dist: pylint (==2.11.1) ; extra == 'tests'
+Requires-Dist: pylint-pytest (==1.1.2) ; extra == 'tests'
+Requires-Dist: pylint-plugin-utils (==0.6) ; extra == 'tests'
+Requires-Dist: mypy (==0.910) ; extra == 'tests'
+Requires-Dist: types-requests (==2.25.11) ; extra == 'tests'
+Requires-Dist: types-tabulate (==0.8.3) ; extra == 'tests'
+Requires-Dist: types-toml (==0.10.1) ; extra == 'tests'
+Requires-Dist: pywin32 (>=225) ; (sys_platform == "win32") and extra == 'tests'
+
+dvc-http
+
+http plugin for dvc

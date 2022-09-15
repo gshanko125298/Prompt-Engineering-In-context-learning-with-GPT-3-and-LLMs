@@ -1,0 +1,3 @@
+[pytest11]
+hydra_pytest = hydra.extra.pytest_plugin
+

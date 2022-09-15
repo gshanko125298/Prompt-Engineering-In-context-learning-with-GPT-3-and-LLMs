@@ -1,0 +1,12 @@
+MANIFEST.in
+NEWS.txt
+README.rst
+distribute_setup.py
+ez_setup.py
+setup.cfg
+setup.py
+ez_setup.egg-info/PKG-INFO
+ez_setup.egg-info/SOURCES.txt
+ez_setup.egg-info/dependency_links.txt
+ez_setup.egg-info/not-zip-safe
+ez_setup.egg-info/top_level.txt

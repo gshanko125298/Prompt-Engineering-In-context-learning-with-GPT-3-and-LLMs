@@ -1,0 +1,5 @@
+
+        [console_scripts]
+        mlflow=mlflow.cli:cli
+        mlp=mlflow.pipelines.cli:commands
+    

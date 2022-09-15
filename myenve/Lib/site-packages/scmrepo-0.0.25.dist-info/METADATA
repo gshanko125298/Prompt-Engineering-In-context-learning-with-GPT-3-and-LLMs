@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: scmrepo
+Version: 0.0.25
+Summary: SCM wrapper and fsspec filesystem for Git for use in DVC
+Home-page: https://github.com/iterative/scmrepo
+Maintainer-email: support@dvc.org
+License: Apache License 2.0
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gitpython (>3)
+Requires-Dist: dulwich (>=0.20.38)
+Requires-Dist: pygit2 (>=1.7.2)
+Requires-Dist: pygtrie (>=2.3.2)
+Requires-Dist: fsspec (>=2021.7.0)
+Requires-Dist: pathspec (<0.10.0,>=0.9.0)
+Requires-Dist: asyncssh (<3,>=2.7.1)
+Requires-Dist: funcy (>=1.14)
+Provides-Extra: dev
+Requires-Dist: pytest (==7.1.2) ; extra == 'dev'
+Requires-Dist: pytest-sugar (==0.9.4) ; extra == 'dev'
+Requires-Dist: pytest-test-utils (==0.0.6) ; extra == 'dev'
+Requires-Dist: pytest-cov (==3.0.0) ; extra == 'dev'
+Requires-Dist: pytest-mock (==3.7.0) ; extra == 'dev'
+Requires-Dist: pytest-asyncio (==0.18.3) ; extra == 'dev'
+Requires-Dist: pylint (==2.14.1) ; extra == 'dev'
+Requires-Dist: mock (==4.0.3) ; extra == 'dev'
+Requires-Dist: mypy (==0.961) ; extra == 'dev'
+Requires-Dist: paramiko (==2.11.0) ; extra == 'dev'
+Requires-Dist: types-certifi (==2021.10.8.3) ; extra == 'dev'
+Requires-Dist: types-mock (==4.0.15) ; extra == 'dev'
+Requires-Dist: types-paramiko (==2.10.0) ; extra == 'dev'
+Requires-Dist: pytest-docker (==0.12.0) ; (python_version < "3.10" or sys_platform != "win32") and extra == 'dev'
+
+### scmrepo
+
+[![Tests](https://github.com/iterative/scmrepo/workflows/Tests/badge.svg)](https://github.com/iterative/scmrepo/actions?workflow=Tests)
+
+SCM wrapper and fsspec filesystem for Git for use in DVC

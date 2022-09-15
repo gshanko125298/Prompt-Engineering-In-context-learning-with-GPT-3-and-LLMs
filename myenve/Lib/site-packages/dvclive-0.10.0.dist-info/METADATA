@@ -1,0 +1,151 @@
+Metadata-Version: 2.1
+Name: dvclive
+Version: 0.10.0
+Summary: Metric logger for ML projects.
+Home-page: https://dvc.org/doc/dvclive
+Author: Paweł Redzyński
+Author-email: pawel@iterative.ai
+License: Apache License 2.0
+Download-URL: https://github.com/iterative/dvclive
+Keywords: data-science metrics machine-learning developer-tools ai
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Requires-Dist: dvc-render[table] (>=0.0.8)
+Provides-Extra: all
+Requires-Dist: dvc-render[table] (>=0.0.8) ; extra == 'all'
+Requires-Dist: pillow ; extra == 'all'
+Requires-Dist: mmcv ; extra == 'all'
+Requires-Dist: tensorflow ; extra == 'all'
+Requires-Dist: xgboost ; extra == 'all'
+Requires-Dist: lightgbm ; extra == 'all'
+Requires-Dist: transformers ; extra == 'all'
+Requires-Dist: datasets ; extra == 'all'
+Requires-Dist: catalyst (<=21.12) ; extra == 'all'
+Requires-Dist: fastai ; extra == 'all'
+Requires-Dist: pytorch-lightning (>=1.6) ; extra == 'all'
+Requires-Dist: scikit-learn ; extra == 'all'
+Provides-Extra: catalyst
+Requires-Dist: catalyst (<=21.12) ; extra == 'catalyst'
+Provides-Extra: fastai
+Requires-Dist: fastai ; extra == 'fastai'
+Provides-Extra: huggingface
+Requires-Dist: transformers ; extra == 'huggingface'
+Requires-Dist: datasets ; extra == 'huggingface'
+Provides-Extra: image
+Requires-Dist: pillow ; extra == 'image'
+Provides-Extra: lgbm
+Requires-Dist: lightgbm ; extra == 'lgbm'
+Provides-Extra: mmcv
+Requires-Dist: mmcv ; extra == 'mmcv'
+Provides-Extra: plots
+Requires-Dist: scikit-learn ; extra == 'plots'
+Provides-Extra: pytorch_lightning
+Requires-Dist: pytorch-lightning (>=1.6) ; extra == 'pytorch_lightning'
+Provides-Extra: sklearn
+Requires-Dist: scikit-learn ; extra == 'sklearn'
+Provides-Extra: tests
+Requires-Dist: pylint (==2.5.3) ; extra == 'tests'
+Requires-Dist: pytest (>=6.0.1) ; extra == 'tests'
+Requires-Dist: pre-commit ; extra == 'tests'
+Requires-Dist: pylint-plugin-utils (>=0.6) ; extra == 'tests'
+Requires-Dist: pytest-cov (>=2.12.1) ; extra == 'tests'
+Requires-Dist: pytest-mock (>=3.6.1) ; extra == 'tests'
+Requires-Dist: pandas (>=1.3.1) ; extra == 'tests'
+Requires-Dist: funcy (>=1.14) ; extra == 'tests'
+Requires-Dist: dvc (>=2.0.0) ; extra == 'tests'
+Requires-Dist: dvc-render[table] (>=0.0.8) ; extra == 'tests'
+Requires-Dist: pillow ; extra == 'tests'
+Requires-Dist: mmcv ; extra == 'tests'
+Requires-Dist: tensorflow ; extra == 'tests'
+Requires-Dist: xgboost ; extra == 'tests'
+Requires-Dist: lightgbm ; extra == 'tests'
+Requires-Dist: transformers ; extra == 'tests'
+Requires-Dist: datasets ; extra == 'tests'
+Requires-Dist: catalyst (<=21.12) ; extra == 'tests'
+Requires-Dist: fastai ; extra == 'tests'
+Requires-Dist: pytorch-lightning (>=1.6) ; extra == 'tests'
+Requires-Dist: scikit-learn ; extra == 'tests'
+Provides-Extra: tf
+Requires-Dist: tensorflow ; extra == 'tf'
+Provides-Extra: xgb
+Requires-Dist: xgboost ; extra == 'xgb'
+
+DVCLive
+=======
+
+
+|CI| |Coverage| |Donate|
+
+|PyPI|
+
+DVCLive is a Python library for logging machine learning metrics and other metadata in simple file formats, which is fully compatible with DVC.
+
+`Documentation <https://dvc.org/doc/dvclive>`_
+==============================================
+
+- `Get Started <https://dvc.org/doc/dvclive/get-started>`_
+- `DVCLive with DVC <https://dvc.org/doc/dvclive/dvclive-with-dvc>`_
+- `ML Frameworks <https://dvc.org/doc/dvclive/ml-frameworks>`_
+- `API Reference <https://dvc.org/doc/dvclive/api-reference>`_
+
+Installation
+============
+
+pip (PyPI)
+----------
+
+|PyPI|
+
+.. code-block:: bash
+
+   pip install dvclive
+
+Depending on the *ML framework* you plan to use to train your model, you might need to specify
+one of the optional dependencies: ``mmcv``, ``tf``, ``xgb``. Or ``all`` to include them all.
+The command should look like this: ``pip install dvclive[tf]`` (in this case TensorFlow and it's dependencies
+will be installed automatically).
+
+To install the development version, run:
+
+.. code-block:: bash
+
+   pip install git+git://github.com/iterative/dvclive
+
+Comparison to related technologies
+==================================
+
+**DVCLive** is an *ML Logger*, similar to:
+
+- `MLFlow <https://mlflow.org/>`_
+- `Weights & Biases <https://wandb.ai/site>`_
+- `Neptune <https://neptune.ai/>`_ 
+
+The main difference with those *ML Loggers* is that **DVCLive** does not require any additional services or servers to run. 
+
+Logged metrics and metadata are stored as plain text files that can be versioned by version control tools (i.e Git) or tracked as pointers to files in DVC storage. 
+
+Copyright
+=========
+
+This project is distributed under the Apache license version 2.0 (see the LICENSE file in the project root).
+
+By submitting a pull request to this project, you agree to license your contribution under the Apache license version
+2.0 to this project.
+
+.. |CI| image:: https://github.com/iterative/dvclive/workflows/tests/badge.svg
+   :target: https://github.com/iterative/dvclive/actions
+   :alt: GHA Tests
+
+.. |Coverage| image:: https://codecov.io/gh/iterative/dvclive/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/iterative/dvclive
+   :alt: Codecov
+
+.. |Donate| image:: https://img.shields.io/badge/patreon-donate-green.svg?logo=patreon
+   :target: https://www.patreon.com/DVCorg/overview
+   :alt: Donate
+
+.. |PyPI| image:: https://img.shields.io/pypi/v/dvclive.svg?label=pip&logo=PyPI&logoColor=white
+   :target: https://pypi.org/project/dvclive
+   :alt: PyPI
+
+
